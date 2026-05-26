@@ -1,0 +1,8 @@
+{
+  "name": "NeuroBioIA",
+  "description": "Tutor inteligente de biología y neurociencia escolar para la Institución Educativa El Minuto de Dios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

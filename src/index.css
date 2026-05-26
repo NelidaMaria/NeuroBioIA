@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-900: #064e3b;
+  
+  --color-neuro-50: #ecfdf5;
+  --color-neuro-100: #d1fae5;
+  --color-neuro-200: #a7f3d0;
+  --color-neuro-500: #10b981;
+  --color-neuro-600: #059669;
+  --color-neuro-700: #047857;
+  --color-neuro-900: #064e3b;
+}
+
+/* Base resets & animations */
+body {
+  font-family: var(--font-sans);
+  background-color: #ecfdf5;
+  color: #1e293b;
+}
+
+.title-font {
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbar for chat and widgets */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+.pulse-animation {
+  animation: pulse-ring 2.5s infinite ease-in-out;
+}
+
+/* High contrast details for rural school projection or tablet accessibility */
+.accessibility-high-contrast {
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
